@@ -1,0 +1,79 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+body{
+  background: linear-gradient(to right, #CBCE91FF, #EA738DFF ); 
+  margin: 0;
+  padding: 0;
+}
+
+.h1{
+  font-size: 3.9rem;
+  margin: 0;
+  font-family: 'Rubik Moonrocks', cursive;
+  text-align: center;
+}
+
+#color{color-scheme: dark;}
+
+.cima{
+  position:absolute;
+  align-items: left;
+  align-content: left;
+  align-self: left;
+  margin-left: 96.3%;
+}
+
+#color{
+  align-items: left;
+}
+.grid{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  max-height: 90vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 120px);
+}
+
+.grid > button{
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px, solid #FFFFFF;
+  outline: none;
+}
+
+.grid > button:hover{
+  background-color: #d4cfcf;
+}
+
+.spant-two{
+  grid-column: span 2;
+  color: #adf802;
+  background-color: #d4cfcf;
+}
+
+.output{
+  grid-column: 1 / -1;
+  background-color: #d4cfcf;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: 10px;
+  word-break: break-all;  
+}
+
+.output .previus{
+  color: black;
+  font-size: 1.5rem;
+}
+
+.output .current{
+  color: blue;
+  font-size: 2.5rem;
+}
