@@ -64,12 +64,12 @@ body{
   word-break: break-all;  
 }
 
-.output .previus-operand{
+.output .previous-operand{
   color: black;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .output .current-operand{
-  color: blue;
+  color: black;
   font-size: 2.5rem;
 }
